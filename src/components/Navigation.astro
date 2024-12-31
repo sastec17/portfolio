@@ -1,0 +1,12 @@
+---
+import ThemeIcon from "./ThemeIcon.astro"
+const navLinks = [
+    {title: "Home", url: "/"},
+    {title: "About", url: "/about"},
+    {title: "Projects", url: "/projects"}
+]
+---
+<nav class="navbar-container">
+    {navLinks.map((link: any) => <a class="nav-links" href={link.url}>{link.title}</a>)}
+    <ThemeIcon />
+</nav>

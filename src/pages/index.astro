@@ -1,16 +1,14 @@
 ---
-
+import "../../styles/global.css"
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<div class="splash-page">
+		<div class="container">
+			<h1 class="typed-out">Hey! I'm Sarah :) </h1>
+		</div>
+		<h2>A passionate full-stack developer with a <b class="text-bold">knack for learning</b> new technologies</h2>
+		<button>Learn more about me!</button>
+	</div>
+</BaseLayout>
