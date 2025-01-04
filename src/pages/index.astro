@@ -1,14 +1,19 @@
 ---
 import "../../styles/global.css"
+import "../../styles/component.css"
 import BaseLayout from "../layouts/BaseLayout.astro"
+import About from "../components/About.astro"
 ---
 
 <BaseLayout>
-	<div class="splash-page">
+	<div id="home" class="splash-page">
 		<div class="container">
 			<h1 class="typed-out">Hey! I'm Sarah :) </h1>
 		</div>
 		<h2>A passionate full-stack developer with a <b class="text-bold">knack for learning</b> new technologies</h2>
-		<button>Learn more about me!</button>
+		<a href="#about" class="learn-more">Click here to learn more!</a>
+	</div>
+	<div id="about">
+		<About></About>
 	</div>
 </BaseLayout>

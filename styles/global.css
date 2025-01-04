@@ -1,127 +1,12 @@
 html {
     background-color: rgb(210, 213, 216);
     font-family: Gill Sans;
+    scroll-behavior: smooth;
   }
 
 html.dark {
     background-color: #282828;
     color: #fff;
-}
-  
-.dark .navbar-container a {
-    color: #fff;
-}
-
-.splash-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-    margin-left: 2em;
-    text-align: left;
-
-}
-
-h1 {
-    color: #8713E0;
-    font-size: 4em;
-
-}
-
-p {
-    font-size: 1.5rem;
-}
-.container h1 {
-    color: #8713E0;
-    font-size: 5em;
-    display: inline-block;
-    max-width: 100%;
-}
-
-.text-bold {
-    color: #8713E0;
-}
-
-h2 {
-    font-size: 2em;
-    max-width: 50%;
-    text-align: center;
-}
-
-.typed-out {
-    display: inline-block;
-    overflow: hidden;
-    border-right: .15em solid white;
-    white-space: nowrap;
-    font-size: 1.6rem;
-    width: 0;
-    animation: typing 2s steps(20, end) forwards,
-    blink .8s infinite;
-  }
-
-.container {
-    display: inline-block;
-}
-
-@keyframes blink {
-    from { border-color: transparent }
-    to { border-color: #8713E0; }
-  }
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* nav link styles */
-.navbar-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.nav-links {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 1em;
-    color: black;
-}
-
-.navbar-container a:hover,
-.navbar-container a:focus {
-    text-decoration: underline;
-    color: #8713E0;
-}
-
-/* social media footer styling */
-.social-media {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: lowercase;
-}
-.social-media a {
-    margin: 1em;
-    color: black;
-    text-decoration: none;
-}
-.dark .social-media a {
-    color: #fff;
-
-}
-.social-media a:hover,
-.social-media a:focus {
-    text-decoration: underline;
-    color: #8713E0;
 }
 
 button {
@@ -130,20 +15,23 @@ button {
     cursor: pointer;
 }
 
-/* about page styling */
-.about-page {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 85vh;
-    margin-left: 2em;
-    text-align: left;
-    width: 90%;
+h1 {
+    color: #8713E0;
+    font-size: 4em;
 }
 
-.about-text {
-    max-width: 40%;
-    margin-left: 5em;
-    
+h2 {
+    font-size: 2em;
+    max-width: 50%;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.dark .learn-more,
+.dark .navbar-container a {
+    color: #fff;
 }
 
