@@ -1,0 +1,75 @@
+@media only screen and (max-width: 768px)  {
+    .navbar-mobile {
+        display: flex;
+        padding: 10px 0;
+        margin: 1em;
+    }
+    .nav-mobile {
+        display: none;
+        width: 100%;
+        background: #fff;
+        z-index: 1; 
+        top: 4.5rem;
+        width: 200px;
+       }
+    .nav-mobile a {
+        color: #222831;
+        display: block;
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+    .dark .checkbtn {
+        color: #fff
+    }
+    .checkbtn {
+        display: block;
+        font-size: 3rem;
+        color: #222831
+    }
+    #check{
+        display: none;
+      }
+
+    #check:checked ~ .nav-mobile {
+        display: block;
+    }
+       
+    .navbar-desktop {
+        display: none;
+    }
+
+    .container h1 {
+        color: #8713E0;
+        font-size: 3.5em;
+        display: inline-block;
+        max-width: 100%;
+    }
+    .typed-out {
+        max-width: 100%;
+        overflow: visible;
+        font-size: 2em; /* Reduce font size for smaller screens */
+        border-right: 0em solid white; /* Adjust border size */
+        display: block;
+        white-space: wrap;
+        animation: none;
+        text-align: center;
+
+    }
+    .splash-page h2 {
+        max-width: fit-content;
+        font-size: 2em;
+    }
+    .about-page {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text {
+        max-width: 85%;
+        margin-left: 0px;
+    }
+}

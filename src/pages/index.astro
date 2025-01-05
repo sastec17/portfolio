@@ -1,8 +1,10 @@
 ---
 import "../../styles/global.css"
 import "../../styles/component.css"
+import "../../styles/mobile.css"
 import BaseLayout from "../layouts/BaseLayout.astro"
 import About from "../components/About.astro"
+import Projects from "../components/Projects.astro"
 ---
 
 <BaseLayout>
@@ -13,7 +15,10 @@ import About from "../components/About.astro"
 		<h2>A passionate full-stack developer with a <b class="text-bold">knack for learning</b> new technologies</h2>
 		<a href="#about" class="learn-more">Click here to learn more!</a>
 	</div>
-	<div id="about">
+	<div id="about" style="margin-top: 50px;">
 		<About></About>
+	</div>
+	<div id="projects">
+		<Projects />
 	</div>
 </BaseLayout>

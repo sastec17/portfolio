@@ -8,33 +8,35 @@ const img_arr = [
 ]
 ---
 <div class="about-page">
-    <div class="slideshow-container">
-    {img_arr.map((image: any) => 
-        <div class="slideshow">
-            <img src={image.url} alt={image.description} style="height: auto; width: 300px"/>
-        </div>
-    )}
+    <h1>About Me</h1>
+    <div class="about-content">
         <div class="slideshow-container">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
+        {img_arr.map((image: any) => 
+            <div class="slideshow">
+                <img src={image.url} alt={image.description} style="height: auto; max-width: 350px; width: 100%"/>
+            </div>
+        )}
+            <div class="dot-container">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
         </div>
-    </div>
 
-    <div class="about-text">
-        <h1>About Me</h1>
-        <div>
-            <p> Hey! I’m Sarah Stec and I just graduated with 
-                my Master’s degree in Computer Science Engineering from the University
-                of Michigan (Go Blue!!) </p>
-            <p> My primary passions are learning and exploring new 
-                technologies, which is why I love full-stack! I’m
-                especially interested in “tech for good “
-                opportunities that reduce socioeconomic disparities.</p>
-            
-            <p>Outside of work, you can find me jamming on my 
-                keyboard, beating my family in Fantasy Football, and 
-                attending as many concerts as possible!</p>
+        <div class="about-text">
+            <div>
+                <p> Hey! I’m Sarah Stec and I just graduated with 
+                    my Master’s degree in Computer Science Engineering from the University
+                    of Michigan (Go Blue!!) </p>
+                <p> My primary passions are learning and exploring new 
+                    technologies, which is why I love full-stack! I’m
+                    especially interested in “tech for good “
+                    opportunities that reduce socioeconomic disparities.</p>
+                
+                <p>Outside of work, you can find me jamming on my 
+                    keyboard, beating my family in Fantasy Football, and 
+                    attending as many concerts as possible!</p>
+            </div>
         </div>
     </div>
 </div>

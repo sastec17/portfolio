@@ -18,6 +18,8 @@ button {
 h1 {
     color: #8713E0;
     font-size: 4em;
+    text-align: center;
+    font-weight: 700;
 }
 
 h2 {

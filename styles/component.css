@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 100vh;
     margin-left: 2em;
     text-align: left;
 
@@ -22,16 +22,18 @@
 
 .typed-out {
     display: inline-block;
+    max-width: fit-content;
     overflow: hidden;
     border-right: .15em solid white;
     white-space: nowrap;
     font-size: 1.6rem;
-    width: 0;
+    width: 0 auto;
     animation: typing 2s steps(20, end) forwards,
     blink .8s infinite;
   }
 
 .container {
+    max-width: 100%;
     display: inline-block;
 }
 
@@ -42,7 +44,9 @@
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 100%;
+        max-width: 100%;
+     }
 }
 
 /* nav link styles */
@@ -52,8 +56,13 @@
     right: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding-left: 1em;
     padding-right: 1em;
+}
+
+.navbar-desktop {
+    display: flex;
 }
 
 .nav-links {
@@ -109,17 +118,19 @@
 
 /* about page styling */
 .about-page {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+}
+.about-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-    margin-left: 2em;
     text-align: left;
-    width: 90%;
 }
 
 .about-text {
-    max-width: 40%;
+    max-width: 45%;
     margin-left: 5em;  
 }
 
@@ -133,9 +144,19 @@
 
 .slidehow {
     display: none;
+    flex-direction: column;
+    justify-content: center; 
     max-width: 5em; 
     height: auto
 }
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+}
+
 .dot {
     height: 15px;
     width: 15px;
@@ -149,3 +170,7 @@
   .active {
     background-color: #8713E0;
   }
+
+  .navbar-mobile {
+    display: none;
+}
