@@ -9,15 +9,23 @@
 
 }
 
+#greeting {
+    color: var(--opp-color)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .container h1 {
-    color: #8713E0;
     font-size: 5em;
     display: inline-block;
     max-width: 100%;
 }
 
 .text-bold {
-    color: #8713E0;
+    color: var(--text-color);
 }
 
 .typed-out {
@@ -37,9 +45,10 @@
     display: inline-block;
 }
 
+/* TODO: use this syntax to set colors throughout css*/
 @keyframes blink {
-    from { border-color: transparent }
-    to { border-color: #8713E0; }
+    from { border-color: transparent; }
+    to { border-color: var(--text-color); }
   }
 
 @keyframes typing {
@@ -59,6 +68,8 @@
     align-items: center;
     padding-left: 1em;
     padding-right: 1em;
+    background-color: var(--background-color);
+    width: 100%;
 }
 
 .navbar-desktop {
@@ -78,28 +89,40 @@
 }
 
 .learn-more {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     display: block;
     text-align: center;
     color: black;
+    padding: 0;
+}
+
+.learn-more p {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
 }
 
 
 .learn-more:hover,
 .learn-more:focus,
-.social-media a:hover,
-.social-media a:focus,
 .navbar-container a:hover,
 .navbar-container a:focus {
     text-decoration: underline;
-    color: #8713E0;
+    color: var(--text-color);
+}
+.social-media a:hover,
+.social-media a:focus {
+    color: var(--text-color);
 }
 
 /* social media footer styling */
 .social-media {
+    position:fixed;
+    width: 100%;
+    background-color: #F5F5F5;
+    bottom: 0;
     display: block;
     text-align: center;
     padding: 10px 0;
@@ -112,15 +135,18 @@
     color: black;
     text-decoration: none;
 }
-.dark .social-media a {
-    color: #fff;
-}
 
+.dark .social-media a {
+    color: #F5F5F5;
+}
+.dark .social-media {
+    background-color: #282828;
+}
 /* about page styling */
 .about-page {
     min-height: 100vh;
     width: 100%;
-    margin-top: 100px;
+    text-align: center;
 }
 .about-content {
     display: flex;
@@ -168,9 +194,86 @@
   }
   
   .active {
-    background-color: #8713E0;
+    background-color: var(--text-color);
   }
 
   .navbar-mobile {
     display: none;
 }
+
+/* project specific syling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto the next row if needed */
+    gap: 40px; /* Space between cards */
+    justify-content: center; /* Center-align the cards horizontally */ 
+}
+.project_card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: calc(30% - 40px);
+    box-sizing: border-box; 
+    padding: 16px;
+    border: 1px solid var(--text-color); 
+    border-radius: 8px;
+}
+.project_card img {
+    display: block; 
+    margin: 0 auto;
+    max-width: 80%; /* Ensure images don’t exceed the card width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space below the image */
+    border: solid;
+    border-color: var(--text-color);
+    border-width: 1px;
+}
+.project_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    text-align: center; 
+    width: 100%;
+}
+
+.project_title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    white-space: wrap;
+
+}
+
+.project_title i {
+    width: 100px;
+    height: auto;
+    line-height: 4em;
+    
+}
+
+.skills {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.skills p {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+:root {
+    --text-color: #7400CC; /* Light mode */
+    --background-color: #F5F5F5;
+    --opp-color: #282828;
+  }
+  
+  .dark {
+    --text-color: #D59EFF; /* Dark mode */
+    --background-color: #282828; 
+    --opp-color: #F5F5F5;
+  }

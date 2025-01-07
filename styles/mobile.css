@@ -1,4 +1,18 @@
+@media only screen and (min-width: 768px) and (max-width: 1220px)  {
+    .project_card {
+        width: calc(40% - 40px);
+    }
+    .project_title h2 {
+        font-size: auto;
+    }
+}
+
+
 @media only screen and (max-width: 768px)  {
+    html {
+        scroll-padding-top: 110px;
+
+    }
     .navbar-mobile {
         display: flex;
         padding: 10px 0;
@@ -39,7 +53,7 @@
     }
 
     .container h1 {
-        color: #8713E0;
+        color: var(--text-color);
         font-size: 3.5em;
         display: inline-block;
         max-width: 100%;
@@ -72,4 +86,19 @@
         max-width: 85%;
         margin-left: 0px;
     }
+    .project_card {
+        width: 90%; 
+      }
 }
+
+
+
+
+:root {
+    --text-color: #7C00DB; /* Light mode */
+  }
+  
+  .dark {
+    --text-color: #D59EFF; /* Dark mode */
+  }
+

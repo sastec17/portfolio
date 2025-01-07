@@ -1,39 +1,44 @@
 html {
-    background-color: rgb(210, 213, 216);
+    background-color: #F5F5F5;
     font-family: Gill Sans;
     scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+    margin-bottom: 80px;
   }
 
 html.dark {
     background-color: #282828;
-    color: #fff;
+    color: #FCFCFC;
 }
 
 button {
-    background-color: #fff;
+    background-color: #F5F5F5;
     font-size: 1.2rem;
     cursor: pointer;
 }
 
 h1 {
-    color: #8713E0;
+    color: #7C00DB;
     font-size: 4em;
     text-align: center;
     font-weight: 700;
 }
 
+.dark h1 {
+    color: #D59EFF;
+}
+
 h2 {
-    font-size: 2em;
-    max-width: 50%;
+    font-size: 2.5em;
     text-align: center;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .dark .learn-more,
 .dark .navbar-container a {
-    color: #fff;
+    color: #FCFCFC;
 }
 
