@@ -15,13 +15,13 @@ const skillIcons: Record<Skill, string> = {
 ---
 <div>
     <h1>Projects</h1>
-    <h2>See what I've been up to :)</h2>
+    <h2>See what I've been up to</h2>
     {/** TODO: CONSIDER MOVING TO SEPARATE COMPONENT */}
     <div class="projects-container">
         {all_projects.map((proj_data) => 
             <div class="project_card">
-                <div class="project_text">
-                    <div class="project_title">
+                <div class="project_text center-all column-flex">
+                    <div class="project_title center-all">
                         <h2>{proj_data.title}</h2>
                         {/* <i class={proj_data.title_img}></i>*/}
                         
@@ -30,9 +30,9 @@ const skillIcons: Record<Skill, string> = {
                     <img src={proj_data.imgUrl} alt="image"/>
                     <p>{proj_data.description}</p>
                     {/* TODO: separate component for related project skills */}
-                    <div class="skills">
+                    <div class="skills center-all">
                         {proj_data.skills.map((skill) => (
-                            <div class="skills">
+                            <div class="skills center-all">
                                 <p>{skill}</p>
                                 {/*                                 <i
                                     class={skillIcons[skill as Skill] || "fa-solid fa-circle-question"}

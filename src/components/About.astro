@@ -4,19 +4,21 @@ import "../../styles/global.css"
 const img_arr = [
     {url: '/slideshow_img/bighouse.JPG', description: 'Sarah visiting the big house'},
     {url: '/slideshow_img/its-showcase.JPG', description: 'Sarah presenting an ITS internship poster'},
+    {url: '/slideshow_img/undergrad.JPG', description: 'Sarah after getting a Bachelors degree'},
     {url: '/slideshow_img/per-grad.JPG', description: 'Sarah after graduating with a Masters degree'}
 ]
 ---
-<div class="about-page">
+<div class="page">
     <h1>About Me</h1>
-    <div class="about-content">
-        <div class="slideshow-container">
+    <div class="about-content center-all">
+        <div class="column-flex">
         {img_arr.map((image: any) => 
             <div class="slideshow">
-                <img src={image.url} alt={image.description} style="height: auto; max-width: 350px; width: 100%"/>
+                <img src={image.url} alt={image.description} style="height: auto; max-width: 375px; width: 100%"/>
             </div>
         )}
-            <div class="dot-container">
+            <div class="center-all dot-container">
+                <span class="dot"></span> 
                 <span class="dot"></span> 
                 <span class="dot"></span> 
                 <span class="dot"></span> 
@@ -25,17 +27,27 @@ const img_arr = [
 
         <div class="about-text">
             <div>
-                <p> Hey! I’m Sarah Stec and I just graduated with 
-                    my Master’s degree in Computer Science Engineering from the University
-                    of Michigan (Go Blue!!) </p>
-                <p> My primary passions are learning and exploring new 
-                    technologies, which is why I love full-stack! I’m
-                    especially interested in “tech for good “
-                    opportunities that reduce socioeconomic disparities.</p>
+                <p> Hey! I’m Sarah Stec, a recent graduate with a Master’s degree in Computer Science Engineering from the University
+                    of Michigan (Go Blue!) </p>
+                <p> During my internship building vaccine tracking dashboards with 
+                    the Michigan Public Health Integrated Center for Outbreak 
+                    Analytics and Modeling (MICOM), I discovered my <b class="text-bold">passion for 
+                    “tech for good”</b>—especially leveraging technology to reduce 
+                    socioeconomic disparities.</p>
+
+                <p>As an <b class="text-bold">insatiably curious learner</b>, I'm drawn to full-stack development
+                    because it allows me to build meaningful solutions while effectively exploring 
+                    new technologies.
+                </p>
                 
                 <p>Outside of work, you can find me jamming on my 
-                    keyboard, beating my family in Fantasy Football, and 
-                    attending as many concerts as possible!</p>
+                    keyboard, crushing it in Fantasy Football, and 
+                    chasing live music at as many concerts as possible :)</p>
+
+                <p> I'm currently <b class="text-bold">seeking full-time positions</b> where I can 
+                    solve <b class="text-bold">exciting and challenging problems</b> in a <b class="text-bold">collaborative
+                    environment!</b>
+                </p>
             </div>
         </div>
     </div>
@@ -43,7 +55,6 @@ const img_arr = [
 <script>
     let slideIndex = 0;
     showSlides();
-    
     function showSlides() {
       let i;
       let slides = document.getElementsByClassName("slideshow");

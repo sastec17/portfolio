@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "title": "SoundScholars",
+            "title_img": "fa-solid fa-music fa-2xl",
+            "affiliation": "University of Michigan",
+            "description": "A cognitive tutor that teaches novices musical rhythms in a fun and approachable way via learning pages and targeted exercises.",
+            "skills": ["React", "JavaScript", "MediaPipe"],
+            "imgUrl": "/project_img/signsavvy.png",
+            "github": "/todo/github"
+        },
+        {
+            "title": "SignSavvy",
+            "title_img": "fa-solid fa-hands-asl-interpreting fa-2xl",
+            "affiliation": "University of Michigan",
+            "description": "Aimed at breaking down communication barriers for American Sign Language (ASL) users, SignSavvy is a web application that provides users with real-time translation of ASL.",
+            "skills": ["React", "JavaScript", "MediaPipe"],
+            "imgUrl": "/project_img/signsavvy.png",
+            "github": "/todo/github"
+        },
+        {
+            "title": "Portfolio",
+            "title_img": "fa-solid fa-briefcase fa-2xl",
+            "affiliation": "University of Michigan",
+            "description": "Learn Astro and brush up on CSS while showcasing what I've been up to.",
+            "skills": ["CSS", "HTML", "Astro"],
+            "imgUrl": "/project_img/portfolio.png",
+            "github": "/todo/github"
+        }
+    ]
+}
