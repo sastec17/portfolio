@@ -1,0 +1,24 @@
+---
+import experiences from "../../data/experiences.json"
+const exp = experiences["experiences"];
+---
+<div class="page center-all column-flex">
+    <h1>Experience</h1>
+      <ul>
+        {exp.map((experience) => 
+            <li class="vertical-line">
+                <div class="experience-card column-flex">
+                    <time class="text-bold">{experience.dates}</time>
+                    <div>
+                        <h2>{experience.title}</h2>
+                        <p>{experience.company}</p>
+                    </div>
+                    {experience.imgUrl &&                     
+                        <img src={experience.imgUrl} alt="image"/>
+                    }
+                    <p>{experience.description}</p>
+                </div>
+            </li>
+        )}    
+      </ul>
+  </div>

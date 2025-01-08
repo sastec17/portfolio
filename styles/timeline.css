@@ -1,0 +1,98 @@
+/* vertical-line */
+.vertical-line {
+  position:relative;
+  list-style-type: none;
+  width: 4px;
+  background-color: var(--opp-color);
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* circle on vertical-line */
+.vertical-line::after {
+  background: var(--opp-color);
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+/* position of experience cards */
+.vertical-line:nth-child(odd) .experience-card {
+    transform: translateX(-110%); /* Shift left */
+}
+  
+  .vertical-line:nth-child(even) .experience-card {
+    transform: translateX(10%); /* Shift right */
+}
+
+.experience-card {
+  text-align: left;
+  position: relative;
+  width: 35vw;
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 0;
+  white-space: wrap;
+  background: #586aee47;
+}
+.experience-card {
+    gap: 1em;
+}
+
+.experience-card h2 {
+    font-size: 1.75em;
+    text-align: left;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+.experience-card img{
+    max-width: 100%;
+}
+
+time,
+.experience-card h2,
+.experience-card p {
+    margin: 0;
+}
+
+time {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.vertical-line div {
+  visibility: hidden;
+  opacity: 0;
+  transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.vertical-line.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* TODO: EVALUATE WIDTH OF DIVS */
+
+
+:root {
+    --text-color: #7400CC; /* Light mode */
+    --background-color: #F5F5F5;
+    --opp-color: #282828;
+  }
+  
+  .dark {
+    --text-color: #D59EFF; /* Dark mode */
+    --background-color: #282828; 
+    --opp-color: #F5F5F5;
+  }

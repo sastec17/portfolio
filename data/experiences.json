@@ -1,0 +1,30 @@
+{
+    "experiences": [
+        {
+            "title": "Data Structures and Algorithms Teaching Assistant",
+            "company": "College of Engineering - University of Michigan",
+            "description": "Aid student learning of fundamental data structures and algorithms for 950+ students by providing 1-on-1 office hours, instructing weekly 2 hour labs of 30+ undergraduate students, and authoring concise exam questions.",
+            "dates": "January 2022 - January 2025"
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Michigan Public Health Integrated Center for Outbreak Analytics and Modeling (MICOM)",
+            "description": "Tracks vaccine uptake rates across the state of Michigan for diseases like COVID-19, MMR, and influenza.",
+            "imgUrl": "/experience_img/lighthouse.png",
+            "dates": "Summer 2024"
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Information and Technology Services - University of Michigan",
+            "description": "Independently designed and implemented a user-friendly full stack web application that enables network engineers to create and provision customized tests to Raspberry Pi computers, facilitating wireless testing of WiFi networks.",
+            "imgUrl": "/experience_img/its_poster.png",
+            "dates": "Summer 2023"
+        },
+        {
+            "title": "Software Engineer Intern",
+            "company": "Dynamic Map Platform North America (formerly Ushr)",
+            "description": "Authored Python scripts to produce descriptive datasets and plots on an interactive dashboard. Constructed, reviewed, and modified automated test cases to support test driven development of a data extraction application.",
+            "dates": "Summers 2021, 2022"
+        }
+    ]
+}

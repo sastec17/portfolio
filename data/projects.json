@@ -3,26 +3,35 @@
         {
             "title": "SoundScholars",
             "title_img": "fa-solid fa-music fa-2xl",
-            "affiliation": "University of Michigan",
+            "affiliation": "AI in Education | University of Michigan",
             "description": "A cognitive tutor that teaches novices musical rhythms in a fun and approachable way via learning pages and targeted exercises.",
-            "skills": ["React", "JavaScript", "MediaPipe"],
-            "imgUrl": "/project_img/signsavvy.png",
+            "skills": ["React.js", "Python", "SQLite"],
+            "imgUrl": "/project_img/soundscholars.png",
             "github": "/todo/github"
         },
         {
             "title": "SignSavvy",
             "title_img": "fa-solid fa-hands-asl-interpreting fa-2xl",
-            "affiliation": "University of Michigan",
+            "affiliation": "Software for Accessibility | University of Michigan",
             "description": "Aimed at breaking down communication barriers for American Sign Language (ASL) users, SignSavvy is a web application that provides users with real-time translation of ASL.",
-            "skills": ["React", "JavaScript", "MediaPipe"],
+            "skills": ["React.js", "MediaPipe"],
             "imgUrl": "/project_img/signsavvy.png",
+            "github": "/todo/github"
+        },
+        {
+            "title": "LLM Inference Scheduling",
+            "title_img": "fa-solid fa-briefcase fa-2xl",
+            "affiliation": "Systems for Generative AI | University of Michigan",
+            "description": "Introduce a novel scheduling algorithm for LLMs that combines Round-Robin (RR) and Shortest Job First (SJF) approaches.",
+            "skills": ["Python", "vLLM", "Google Cloud"],
+            "imgUrl": "/project_img/rr-sjf.png",
             "github": "/todo/github"
         },
         {
             "title": "Portfolio",
             "title_img": "fa-solid fa-briefcase fa-2xl",
-            "affiliation": "University of Michigan",
-            "description": "Learn Astro and brush up on CSS while showcasing what I've been up to.",
+            "affiliation": "Personal",
+            "description": "Learn Astro and brush up on CSS while showcasing some of my favorite course projects.",
             "skills": ["CSS", "HTML", "Astro"],
             "imgUrl": "/project_img/portfolio.png",
             "github": "/todo/github"
