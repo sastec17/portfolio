@@ -73,11 +73,7 @@
         max-width: fit-content;
         font-size: 2em;
     }
-    .about-page {
-        display: block;
-        justify-content: center;
-        text-align: center;
-    }
+
     .about-content {
         display: flex;
         flex-direction: column;

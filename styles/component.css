@@ -1,21 +1,20 @@
-.splash-page {
+.center-all {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-left: 2em;
-    text-align: left;
+}
 
+.column-flex {
+    display: flex; 
+    flex-direction: column;
+}
+
+.page {
+    min-height: 100vh
 }
 
 #greeting {
     color: var(--opp-color)
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
 }
 
 .container h1 {
@@ -45,7 +44,6 @@
     display: inline-block;
 }
 
-/* TODO: use this syntax to set colors throughout css*/
 @keyframes blink {
     from { border-color: transparent; }
     to { border-color: var(--text-color); }
@@ -104,7 +102,6 @@
     margin-bottom: 0px;
 }
 
-
 .learn-more:hover,
 .learn-more:focus,
 .navbar-container a:hover,
@@ -120,9 +117,9 @@
 /* social media footer styling */
 .social-media {
     position:fixed;
-    width: 100%;
-    background-color: #F5F5F5;
     bottom: 0;
+    width: 100%;
+    background-color: var(--background-color);
     display: block;
     text-align: center;
     padding: 10px 0;
@@ -132,26 +129,12 @@
 }
 .social-media a {
     margin: 1em;
-    color: black;
+    color: var(--opp-color);
     text-decoration: none;
 }
 
-.dark .social-media a {
-    color: #F5F5F5;
-}
-.dark .social-media {
-    background-color: #282828;
-}
 /* about page styling */
-.about-page {
-    min-height: 100vh;
-    width: 100%;
-    text-align: center;
-}
 .about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: left;
 }
 
@@ -161,25 +144,12 @@
 }
 
 /* slideshow styling */
-.slidehow-container {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-}
-
 .slidehow {
-    display: none;
-    flex-direction: column;
-    justify-content: center; 
     max-width: 5em; 
     height: auto
 }
 
 .dot-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 2px;
 }
 
@@ -193,20 +163,20 @@
     transition: background-color 0.6s ease;
   }
   
-  .active {
+.active {
     background-color: var(--text-color);
   }
 
-  .navbar-mobile {
+.navbar-mobile {
     display: none;
 }
 
-/* project specific syling */
+/* project syling */
 .projects-container {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap onto the next row if needed */
-    gap: 40px; /* Space between cards */
-    justify-content: center; /* Center-align the cards horizontally */ 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    justify-content: center; 
 }
 .project_card {
     display: flex; 
@@ -221,46 +191,31 @@
 .project_card img {
     display: block; 
     margin: 0 auto;
-    max-width: 80%; /* Ensure images don’t exceed the card width */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add space below the image */
+    max-width: 80%; 
+    height: auto; 
+    margin-bottom: 10px;
     border: solid;
     border-color: var(--text-color);
     border-width: 1px;
 }
 .project_text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 1.2em;
     text-align: center; 
     width: 100%;
 }
 
 .project_title {
-    display: flex;
-    align-items: center;
-    justify-items: center;
     gap: 10px;
     white-space: wrap;
-
 }
 
 .project_title i {
     width: 100px;
     height: auto;
     line-height: 4em;
-    
 }
 
-.skills {
-    position: sticky;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3px;
-    margin-right: 3px;
-}
+.skills,
 .skills p {
     margin-left: 3px;
     margin-right: 3px;
