@@ -5,7 +5,7 @@
             "title_img": "fa-solid fa-music fa-2xl",
             "affiliation": "AI in Education | University of Michigan",
             "description": "A cognitive tutor that teaches novices musical rhythms in a fun and approachable way via learning pages and targeted exercises.",
-            "skills": ["React.js", "Python", "SQLite"],
+            "skills": ["React", "Python", "SQLite"],
             "imgUrl": "/project_img/soundscholars.png",
             "github": "/todo/github"
         },
@@ -13,8 +13,8 @@
             "title": "SignSavvy",
             "title_img": "fa-solid fa-hands-asl-interpreting fa-2xl",
             "affiliation": "Software for Accessibility | University of Michigan",
-            "description": "Aimed at breaking down communication barriers for American Sign Language (ASL) users, SignSavvy is a web application that provides users with real-time translation of ASL.",
-            "skills": ["React.js", "MediaPipe"],
+            "description": "Aimed at breaking down communication barriers for American Sign Language (ASL) users, SignSavvy is a web application that provides users with real-time translation of the ASL alphabet.",
+            "skills": ["React", "MediaPipe"],
             "imgUrl": "/project_img/signsavvy.png",
             "github": "/todo/github"
         },
@@ -25,6 +25,15 @@
             "description": "Introduce a novel scheduling algorithm for LLMs that combines Round-Robin (RR) and Shortest Job First (SJF) approaches.",
             "skills": ["Python", "vLLM", "Google Cloud"],
             "imgUrl": "/project_img/rr-sjf.png",
+            "github": "/todo/github"
+        },
+        {
+            "title": "Ask485?",
+            "title_img": "fa-solid fa-briefcase fa-2xl",
+            "affiliation": "Web Systems | University of Michigan",
+            "description": "A fully functional search engine created via a segmented inverted index of webpages, an index server (search results), and a search server (UI).",
+            "skills": ["React", "Python", "MapReduce"],
+            "imgUrl": "/project_img/ask485.png",
             "github": "/todo/github"
         },
         {

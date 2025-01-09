@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 1220px)  {
+@media only screen and (min-width: 769px) and (max-width: 1220px)  {
     .project_card {
         width: calc(40% - 40px);
     }
@@ -19,18 +19,27 @@
         margin: 1em;
     }
     .nav-mobile {
-        display: none;
+        position: fixed;
+        display: hidden;
         width: 100%;
-        background: #fff;
+        background: var(--background-color);
         z-index: 1; 
-        top: 4.5rem;
-        width: 200px;
+        top: 100px;
+        right: 10px;
+        width: 150px;
+        border: solid;
+        border-color: var(--opp-color);
+        border-width: 1px;
        }
     .nav-mobile a {
-        color: #222831;
+        color: var(--text-color);
+        text-decoration: none;
         display: block;
         font-size: 1rem;
         padding: 1rem 1.5rem;
+        border: solid;
+        border-color: var(--opp-color);
+        border-width: 1px;
     }
     .dark .checkbtn {
         color: #fff
@@ -42,12 +51,8 @@
     }
     #check{
         display: none;
-      }
-
-    #check:checked ~ .nav-mobile {
-        display: block;
     }
-       
+    
     .navbar-desktop {
         display: none;
     }
@@ -84,17 +89,38 @@
     }
     .project_card {
         width: 90%; 
-      }
+    }
+
+    .vertical-line {
+       list-style-type: none;
+    }
+
+    .experience-card { 
+        width: 90vw;
+    }
+
+    ul {
+        gap: 1em;
+        padding: 0 0 0 0;
+    }
+
+    ul li {
+        margin-bottom: 1em;
+    }
+
 }
 
 
 
 
 :root {
-    --text-color: #7C00DB; /* Light mode */
+    --text-color: #7400CC; /* Light mode */
+    --background-color: #F5F5F5;
+    --opp-color: #282828;
   }
   
   .dark {
     --text-color: #D59EFF; /* Dark mode */
+    --background-color: #282828; 
+    --opp-color: #F5F5F5;
   }
-

@@ -1,7 +1,7 @@
 ---
 import projects from "../../data/projects.json"
 const all_projects = projects["projects"]
-type Skill = "Python" | "JavaScript" | "HTML" | "CSS" | "React" | "NodeJS";
+type Skill = "Python" | "JavaScript" | "HTML" | "CSS" | "React" | "NodeJS" | "SQLite";
 
 const skillIcons: Record<Skill, string> = {
   Python: "fa-brands fa-python",
@@ -10,6 +10,7 @@ const skillIcons: Record<Skill, string> = {
   CSS: "fa-brands fa-css3-alt",
   React: "fa-brands fa-react",
   NodeJS: "fa-brands fa-node",
+  SQLite: "fa-solid fa-database"
 };
 
 ---
@@ -34,11 +35,10 @@ const skillIcons: Record<Skill, string> = {
                         {proj_data.skills.map((skill) => (
                             <div class="skills center-all">
                                 <p>{skill}</p>
-                                {/*                                 <i
+                                <i
                                     class={skillIcons[skill as Skill] || "fa-solid fa-circle-question"}
                                     title={skill}
-                                ></i> */}
-
+                                ></i> 
                             </div>
                         ))}
                     </div>

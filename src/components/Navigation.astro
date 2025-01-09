@@ -9,17 +9,21 @@ const navLinks = [
 ---
 {/** TODO: MOVE NAV-MOBILE DIV AND ADD JS TO MAKE RESPONSIVE */}
 <div class="navbar-container">
-    <nav class="navbar-desktop">
-        {navLinks.map((link: any) => <a class="nav-links" href={link.url}>{link.title}</a>)}
-    </nav>
-    <nav class="navbar-mobile">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <input type="checkbox" id="check"/>
-        <div class="navbar-mobile nav-mobile w3-animate-right">
-            {navLinks.map((link: any) => <a href={link.url}>{link.title}</a>)}
-        </div>
-    </nav>
-    <ThemeIcon />
+    <div class="navbar-container">
+        <nav class="navbar-desktop">
+            {navLinks.map((link: any) => <a class="nav-links" href={link.url}>{link.title}</a>)}
+        </nav>
+        <nav class="navbar-mobile">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="check"/>
+        </nav>
+        <ThemeIcon />
+    </div>
+
 </div>
+<div class="nav-mobile" id="navMobile">
+    {navLinks.map((link: any) => <a class="links" href={link.url}>{link.title}</a>)}
+</div>
+
