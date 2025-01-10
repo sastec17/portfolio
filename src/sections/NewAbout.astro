@@ -1,0 +1,93 @@
+---
+import "../../styles/global.css"
+
+const img_arr = [
+    {url: '/slideshow_img/bighouse.JPG', description: 'Sarah visiting the big house'},
+    {url: '/slideshow_img/undergrad.JPG', description: 'Sarah after getting a Bachelors degree'},
+    {url: '/slideshow_img/per-grad.JPG', description: 'Sarah after graduating with a Masters degree'}
+]
+---
+<div class="page">
+    <h1>About Me</h1>
+    <div class="about-content center-all">
+        <div class="column-flex center-all">
+            {img_arr.map((image: any) => 
+                <div class="slideshow">
+                    <img src={image.url} alt={image.description} style="height: auto; max-width: 375px; width: 100%"/>
+                </div>
+            )}
+                <div class="center-all dot-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </div>
+
+        <div class="about-text">
+            <div class="about-box mission-box">
+                <h2 class="text-bold">Passion + Interest</h2>
+                <p> During my internship building vaccine tracking dashboards with 
+                    MICOM, I discovered my <b class="text-bold">passion for 
+                    “tech for good.”</b> I now aspire to use technology to reduce 
+                    socioeconomic disparities.</p>
+
+                <p>As an <b class="text-bold">insatiably curious learner</b>, I'm drawn to full-stack development
+                    because it allows me to build meaningful solutions while effectively exploring 
+                    new technologies.
+                </p>
+            </div>
+            <div class="about-boxes">
+                {/** Education */}
+                <div class="about-box small-box">
+                    <div>
+                        <h2 class="text-bold">Education</h2>
+                        <h3>University of Michigan</h3>
+                    </div>
+
+                    <div>
+                        <p>Master of Science in Engineering </p>
+                        <b>Computer Science</b>
+                    </div>
+
+                    <div>
+                        <p>Bachelor of Science in Engineering</p>
+                        <b>Computer Science, Minor in Mathematics</b>
+                    </div>
+                </div>
+                {/** Personal */}
+                <div class="about-box small-box">
+                    <h2 class="text-bold">Personal</h2>
+                    <p>Outside of CS, you'll catch me...</p>
+                    <ul class="personal-list">
+                        <li>Jamming on my keyboard</li>
+                        <li>Crushing it in Fantasy Football</li>
+                        <li>Chasing live music at as many concerts as possible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slideshow");
+      let dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        // Explicitly cast 'slides[i]' to 'HTMLElement'
+        (slides[i] as HTMLElement).style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+      // Explicitly cast 'slides[slideIndex-1]' to 'HTMLElement'
+      (slides[slideIndex-1] as HTMLElement).style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>

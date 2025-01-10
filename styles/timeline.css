@@ -9,8 +9,8 @@
         padding-top: 50px;
       }
       
-      /* circle on vertical-line */
-      .vertical-line::after {
+    /* circle on vertical-line */
+    .vertical-line::after {
         background: var(--opp-color);
         content: '';
         width: 25px;
@@ -20,20 +20,20 @@
         left:50%;
         transform: translateX(-50%);
         bottom: 0;
-      }
+    }
       
-      /* position of experience cards */
-      .vertical-line:nth-child(odd) .experience-card {
-          transform: translateX(-110%); /* Shift left */
-      }
-        
-        .vertical-line:nth-child(even) .experience-card {
-          transform: translateX(10%); /* Shift right */
-      }
-      .experience-card {
-        width: 40vw;
+    /* position of experience cards */
+    .vertical-line:nth-child(odd) .experience-card {
+        transform: translateX(-105%); /* Shift left */
+    }
+    
+    .vertical-line:nth-child(even) .experience-card {
+        transform: translateX(5%); /* Shift right */
+    }
+    .experience-card {
+        width: 45vw;
         max-width: 700px;
-      }
+    }
 }
 .vertical-line div {
     visibility: hidden;
@@ -41,11 +41,11 @@
     transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   
-  .vertical-line.show div {
+.vertical-line.show div {
     transform: none;
     visibility: visible;
     opacity: 1;
-  }
+}
 
 .experience-card {
   text-align: left;
@@ -68,7 +68,7 @@
 }
 
 .experience-card img{
-    max-width: 100%;
+    max-width: 0%;
 }
 
 time,

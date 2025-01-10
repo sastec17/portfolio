@@ -78,10 +78,13 @@
         max-width: fit-content;
         font-size: 2em;
     }
-
+    .about-boxes,
     .about-content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     .about-text {
         max-width: 85%;
@@ -109,9 +112,6 @@
     }
 
 }
-
-
-
 
 :root {
     --text-color: #7400CC; /* Light mode */
