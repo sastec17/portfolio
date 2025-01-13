@@ -192,6 +192,7 @@
     padding: 16px;
     border: 1px solid var(--text-color); 
     border-radius: 8px;
+    position: relative;
 }
 .project_card img {
     display: block; 
@@ -215,15 +216,23 @@
 }
 
 .project_title i {
-    width: 100px;
     height: auto;
     line-height: 4em;
 }
 
-.skills,
+.skills {
+    position: absolute;
+    bottom: 0px;
+}
+
 .skills p {
-    margin-left: 3px;
     margin-right: 3px;
+    margin-left: 3px;
+    box-sizing: border-box; 
+    padding: 4px;
+    border: 1px solid var(--text-color); 
+    border-radius: 8px;
+    font-size: 0.75em;
 }
 
 /* experience styling */
@@ -274,7 +283,7 @@
     border: 1px solid var(--text-color); 
     border-radius: 8px;
     text-align: center;
-    gap: 1em;
+    gap: 1.5em;
     width: 100%
 }
 
@@ -287,7 +296,7 @@
 
 .about-boxes {
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .mission-box {
