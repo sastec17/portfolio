@@ -10,14 +10,14 @@
             "title": "Full Stack Developer",
             "company": "Michigan Public Health Integrated Center for Outbreak Analytics and Modeling (MICOM)",
             "description": "Tracks vaccine uptake rates across the state of Michigan for diseases like COVID-19, MMR, and influenza.",
-            "imgUrl": "/experience_img/lighthouse.png",
+            "imgUrl": "/portfolio/experience_img/lighthouse.png",
             "dates": "Summer 2024"
         },
         {
             "title": "Full Stack Developer",
             "company": "Information and Technology Services - University of Michigan",
             "description": "Independently designed and implemented a user-friendly full stack web application that enables network engineers to create and provision customized tests to Raspberry Pi computers, facilitating wireless testing of WiFi networks.",
-            "imgUrl": "/experience_img/its_poster.png",
+            "imgUrl": "/portfolio/experience_img/its_poster.png",
             "dates": "Summer 2023"
         },
         {

@@ -6,7 +6,7 @@
             "affiliation": "AI in Education | University of Michigan",
             "description": "A cognitive tutor that teaches novices musical rhythms in a fun and approachable way via learning pages and targeted exercises.",
             "skills": ["React.js", "Python", "SQLite"],
-            "imgUrl": "/project_img/soundscholars.png",
+            "imgUrl": "/portfolio/project_img/soundscholars.png",
             "github": "https://github.com/sastec17/soundscholars"
         },
         {
@@ -15,7 +15,7 @@
             "affiliation": "Software for Accessibility | University of Michigan",
             "description": "Aimed at breaking down communication barriers for American Sign Language (ASL) users, SignSavvy is a web application that provides users with real-time translation of the ASL alphabet.",
             "skills": ["React.js", "MediaPipe"],
-            "imgUrl": "/project_img/signsavvy.png",
+            "imgUrl": "/portfolio/project_img/signsavvy.png",
             "github": "https://github.com/sastec17/signsavvy-mediapipe"
         },
         {
@@ -24,7 +24,7 @@
             "affiliation": "Systems for Generative AI | University of Michigan",
             "description": "Introduce a novel scheduling algorithm for LLMs that combines Round-Robin (RR) and Shortest Job First (SJF) approaches to minimize latency and improve fairness.",
             "skills": ["Python", "vLLM", "Google Cloud"],
-            "imgUrl": "/project_img/rr-sjf.png",
+            "imgUrl": "/portfolio/project_img/rr-sjf.png",
             "link": "/llm_inference.pdf"
         },
         {
@@ -33,7 +33,7 @@
             "affiliation": "Web Systems | University of Michigan",
             "description": "A fully functional search engine created via a segmented inverted index of webpages, an index server (search results), and a search server (UI).",
             "skills": ["React.js", "Python", "MapReduce"],
-            "imgUrl": "/project_img/ask485.png"
+            "imgUrl": "/portfolio/project_img/ask485.png"
         },
         {
             "title": "Portfolio",
@@ -41,7 +41,7 @@
             "affiliation": "Personal",
             "description": "Learn Astro and brush up on CSS while showcasing some of my favorite course projects.",
             "skills": ["CSS", "HTML", "Astro"],
-            "imgUrl": "/project_img/portfolio.png",
+            "imgUrl": "/portfolio/project_img/portfolio.png",
             "github": "https://github.com/sastec17/astro_portfolio"
         }
     ]
