@@ -1,18 +1,6 @@
 ---
 import projects from "../../data/projects.json"
 const all_projects = projects["projects"]
-type Skill = "Python" | "JavaScript" | "HTML" | "CSS" | "React" | "NodeJS" | "SQLite";
-
-const skillIcons: Record<Skill, string> = {
-  Python: "fa-brands fa-python",
-  JavaScript: "fa-brands fa-js",
-  HTML: "fa-brands fa-html5",
-  CSS: "fa-brands fa-css3-alt",
-  React: "fa-brands fa-react",
-  NodeJS: "fa-brands fa-node",
-  SQLite: "fa-solid fa-database"
-};
-
 ---
 <div class="page">
     <h1>Projects</h1>
@@ -23,22 +11,26 @@ const skillIcons: Record<Skill, string> = {
             <div class="project_card">
                 <div class="project_text center-all column-flex">
                     <div class="project_title center-all">
-                        <h2>{proj_data.title}</h2>
-                        {/* <i class={proj_data.title_img}></i>*/}
-                        
+                            <h2>{proj_data.title}</h2>
+                            {proj_data.github && 
+                                <a href={proj_data.github}>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            }
+                            {proj_data.link &&
+                                <a href={proj_data.link}>
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            }
                     </div>
 
                     <img src={proj_data.imgUrl} alt="image"/>
-                    <p>{proj_data.description}</p>
+                    <p style="margin-bottom: 36px;">{proj_data.description}</p>
                     {/* TODO: separate component for related project skills */}
                     <div class="skills center-all">
                         {proj_data.skills.map((skill) => (
-                            <div class="skills center-all">
+                            <div class="center-all">
                                 <p>{skill}</p>
-                                <i
-                                    class={skillIcons[skill as Skill] || "fa-solid fa-circle-question"}
-                                    title={skill}
-                                ></i> 
                             </div>
                         ))}
                     </div>
