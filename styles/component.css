@@ -22,6 +22,10 @@
     margin-bottom: 18px;
 }
 
+.splash-heading h1 {
+    font-size: 5em;
+}
+
 /* typing effect */
 .typed-out {
     display: inline-block;
