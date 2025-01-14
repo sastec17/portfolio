@@ -9,24 +9,25 @@ const all_projects = projects["projects"]
         {all_projects.map((proj_data) => 
             <div class="project_card">
                 <div class="project_text center-all column-flex">
-                    <div class="project_title center-all">
-                            <h2>{proj_data.title}</h2>
-                            {proj_data.github && 
-                                <a href={proj_data.github}>
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            }
-                            {proj_data.link &&
-                                <a href={proj_data.link}>
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                            }
-                    </div>
+                    <div class="card-content">
+                        <div class="project_title center-all">
+                                <h2>{proj_data.title}</h2>
+                                {proj_data.github && 
+                                    <a href={proj_data.github}>
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                }
+                                {proj_data.link &&
+                                    <a href={proj_data.link}>
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                }
+                        </div>
 
-                    <img src={proj_data.imgUrl} alt="image"/>
-                    <p style="margin-bottom: 36px;">{proj_data.description}</p>
-                    {/* TODO: separate component for related project skills */}
-                    <div class="skills center-all">
+                        <img src={proj_data.imgUrl} alt="image"/>
+                        <p>{proj_data.description}</p>
+                    </div>
+                    <div class="skills">
                         {proj_data.skills.map((skill) => (
                             <div class="center-all">
                                 <p>{skill}</p>

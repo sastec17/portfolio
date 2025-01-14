@@ -7,11 +7,10 @@
     }
 }
 
-
 @media only screen and (max-width: 768px)  {
     html {
         scroll-padding-top: 110px;
-
+        margin-bottom: 0px;
     }
     .navbar-mobile {
         display: flex;
@@ -108,6 +107,11 @@
         margin-bottom: 1em;
     }
 
+    .social-media {
+        position: relative;
+        padding: 10px 0;
+        margin-top: 15px;
+    }
 }
 
 :root {

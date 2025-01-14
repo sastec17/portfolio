@@ -3,28 +3,36 @@
         {
             "title": "Data Structures and Algorithms Teaching Assistant",
             "company": "College of Engineering - University of Michigan",
-            "description": "Aid student learning of fundamental data structures and algorithms for 950+ students by providing 1-on-1 office hours, instructing weekly 2 hour labs of 30+ undergraduate students, and authoring concise exam questions.",
-            "dates": "January 2022 - January 2025"
+            "mainPoint": "This is where I fell in love with teaching :)",
+            "description": "I had the privilege of aiding student learning for 950+ students by instructing weekly 2 hour labs of 30+ students, providing 1-on-1 office hours, and authoring concise exam questions. Collaborating with students was a blast!",
+            "dates": "January 2022 - January 2025",
+            "skills": ["C++", "Collaborative Problem Solving", "Public Speaking"]
         },
         {
             "title": "Full Stack Developer",
             "company": "Michigan Public Health Integrated Center for Outbreak Analytics and Modeling (MICOM)",
-            "description": "Pair program, implement, and peer review key full stack features on a $17.5 million project that graphically tracks state vaccination records.",
+            "mainPoint": "Here, I realized my passion for \"tech for good\"",
+            "description": "In this role, I pair programmed, implemented, and peer reviewed key full stack features on an incredible project that graphically tracks state vaccination records. This $17.5 million project helps epidemiologists to analyze trends and better allocate resources to underprivileged areas.",
             "imgUrl": "/portfolio/experience_img/lighthouse.png",
-            "dates": "Summer 2024"
+            "dates": "Summer 2024",
+            "skills": ["React.js", "Python", "Pair Programming"]
         },
         {
             "title": "Full Stack Developer",
             "company": "Information and Technology Services - University of Michigan",
-            "description": "Independently designed and implemented a user-friendly full stack web application that enables network engineers to create and provision customized tests to Raspberry Pi computers, facilitating wireless testing of WiFi networks.",
+            "mainPoint": "This is where I discovered the excitement of full-stack development!",
+            "description": "I independently designed and implemented a user-friendly full stack web application that enables network engineers to create and provision customized tests to Raspberry Pi computers. This facilitates wireless WiFi testing at the click of a button - pretty neat, huh?",
             "imgUrl": "/portfolio/experience_img/its_poster.png",
-            "dates": "Summer 2023"
+            "dates": "Summer 2023",
+            "skills": ["Vue.js", "Node.js", "MongoDB", "UX Design"]
         },
         {
             "title": "Software Engineer Intern",
             "company": "Dynamic Map Platform North America (formerly Ushr)",
-            "description": "Authored Python scripts to produce descriptive datasets and plots on an interactive dashboard. Constructed, reviewed, and modified automated test cases to support test driven development of a data extraction application.",
-            "dates": "Summers 2021, 2022"
+            "mainPoint": "Here, I built confidence and reaffirmed my love for CS and math.",
+            "description": "I explored the landscape of semi-autonomous vehicles via data analysis and test-driven development. Notably, I authored an interactive dashboard complete with descriptive datasets and plots, along with automated test cases to support development of a data extraction application.",
+            "dates": "Summers 2021, 2022",
+            "skills": ["Python", "SQL", "Test Driven Development"]
         }
     ]
 }

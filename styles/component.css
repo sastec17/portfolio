@@ -176,7 +176,7 @@
     display: none;
 }
 
-/* project syling */
+/* syling */
 .projects-container {
     display: flex;
     flex-wrap: wrap; 
@@ -221,73 +221,27 @@
 }
 
 .skills {
+    display: flex;
+    gap: 0.5em;
     position: absolute;
     bottom: 0px;
+    flex: 1;
 }
 
 .skills p {
-    margin-right: 3px;
-    margin-left: 3px;
     box-sizing: border-box; 
     padding: 4px;
     border: 1px solid var(--text-color); 
     border-radius: 8px;
-    font-size: 0.75em;
+    font-size: 15px;
+    margin-bottom: 10px;
+    flex: 1;
+    display: flex;
 }
 
 .row-reverse {
     flex-direction: row-reverse;
 }
-
-/* Experience */
-
-.experience-section {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 40px; 
-    justify-content: center; 
-}
-
-.experience-card {
-    text-align: left;
-    position: relative;
-    padding: 15px;
-    border-radius: 5px;
-    bottom: 0;
-    white-space: wrap;
-    background: #586aee47;
-    gap: 1em;
-  }
-
-  .experience-card h2 {
-      font-size: 1.75em;
-      text-align: left;
-      margin: 0 0 0 0;
-      padding: 0;
-  }
-  
-  .experience-card img{
-      max-width: 80%;
-  }
-
-time,
-.experience-card h2,
-.experience-card p {
-    margin: 0;
-}
-
-
-
-time {
-  font-weight: bold;
-  font-size: 1.2em;
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-
-/* Updated about section */
 
 /* border around boxes */
 .about-box {
@@ -322,6 +276,10 @@ time {
 .personal-list li{
     text-align: left;
     font-size: 18px;
+}
+
+.card-content {
+    margin-bottom: 18px;
 }
 
 :root {

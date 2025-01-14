@@ -8,13 +8,22 @@ const exp = experiences["experiences"];
         {exp.map((experience) => 
             <li class="vertical-line">
                 <div class="experience-card column-flex">
-                    <time class="text-bold">{experience.dates}</time>
-                    <div>
-                        <h2>{experience.title}</h2>
-                        <p>{experience.company}</p>
+                    <div class="card-content">
+                        <time class="text-bold">{experience.dates}</time>
+                        <div class="card-heading">
+                            <h2>{experience.title}</h2>
+                            <p>{experience.company}</p>
+                        </div>
+                        <p class="text-bold">{experience.mainPoint}</p>
+                        <p style="margin-bottom: 36px;">{experience.description}</p>
                     </div>
-                 
-                    <p class="description">{experience.description}</p>
+                    <div class="skills center-all">
+                        {experience.skills.map((skill) => (
+                            <div class="center-all">
+                                <p>{skill}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </li>
         )}    
