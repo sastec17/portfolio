@@ -4,23 +4,16 @@ const exp = experiences["experiences"];
 ---
 <div class="page">
     <h1>Experience</h1>
-    <div class="center-all column-flex">
-        {exp.map((experience, index) =>
-            <div 
-                class={`experience center-all ${index % 2 === 1 ? 'row-reverse' : ''}`}
-            >
-                {/* Text */}
-                <div class="experience-text">
-                    <h3>{experience.company}</h3>
-                    <h3>{experience.title}</h3>
-                    {experience.dates}
-                    <p>{experience.description}</p>
-                    <img src={experience.imgUrl} alt="image"/>
-
+    <div class="experience-section">
+        {exp.map((experience) =>
+            <div class="experience-card">
+                <time class="text-bold">{experience.dates}</time>
+                <div>
+                    <h2>{experience.title}</h2>
+                    <p>{experience.company}</p>
                 </div>
+                <p>{experience.description}</p>
 
-                {/* Image */}
-                <img src={experience.imgUrl} alt="image"/>
             </div>
         )}
     </div>

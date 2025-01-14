@@ -235,41 +235,57 @@
     font-size: 0.75em;
 }
 
-/* experience styling */
-.experience {
-    display: flex;
-    justify-content: space-between;
-    gap: 2em;
-    margin-bottom: 10px;
-    border-bottom: 1px solid var(--opp-color);
-    max-width: 75%
-
-}
-.experience img {
-    display: block; 
-    margin: 0;
-    max-width: 30%; 
-    height: auto; 
-    margin-bottom: 10px;
-    border: solid;
-    border-color: var(--text-color);
-    border-width: 1px;
-}
-
-.experience-text {
-    max-width: 70%;
-    text-align: left;
-    white-space: wrap;
-    
-}
-
 .row-reverse {
     flex-direction: row-reverse;
 }
 
-.experience-text h2 {
-    text-align: left;
+/* Experience */
+
+.experience-section {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px; 
+    justify-content: center; 
 }
+
+.experience-card {
+    text-align: left;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    bottom: 0;
+    white-space: wrap;
+    background: #586aee47;
+    gap: 1em;
+  }
+
+  .experience-card h2 {
+      font-size: 1.75em;
+      text-align: left;
+      margin: 0 0 0 0;
+      padding: 0;
+  }
+  
+  .experience-card img{
+      max-width: 80%;
+  }
+
+time,
+.experience-card h2,
+.experience-card p {
+    margin: 0;
+}
+
+
+
+time {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 
 /* Updated about section */
 
@@ -305,7 +321,7 @@
 
 .personal-list li{
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 :root {

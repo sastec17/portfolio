@@ -2,7 +2,6 @@
     "projects": [
         {
             "title": "SoundScholars",
-            "title_img": "fa-solid fa-music fa-2xl",
             "affiliation": "AI in Education | University of Michigan",
             "description": "A cognitive tutor that teaches novices musical rhythms in a fun and approachable way via learning pages and targeted exercises.",
             "skills": ["React.js", "Python", "SQLite"],
@@ -11,7 +10,6 @@
         },
         {
             "title": "SignSavvy",
-            "title_img": "fa-solid fa-hands-asl-interpreting fa-2xl",
             "affiliation": "Software for Accessibility | University of Michigan",
             "description": "Aimed at breaking down communication barriers for American Sign Language (ASL) users, SignSavvy is a web application that provides users with real-time translation of the ASL alphabet.",
             "skills": ["React.js", "MediaPipe"],
@@ -20,16 +18,14 @@
         },
         {
             "title": "LLM Inference Scheduling",
-            "title_img": "fa-solid fa-briefcase fa-2xl",
             "affiliation": "Systems for Generative AI | University of Michigan",
             "description": "Introduce a novel scheduling algorithm for LLMs that combines Round-Robin (RR) and Shortest Job First (SJF) approaches to minimize latency and improve fairness.",
             "skills": ["Python", "vLLM", "Google Cloud"],
             "imgUrl": "/portfolio/project_img/rr-sjf.png",
-            "link": "/llm_inference.pdf"
+            "link": "/portfolio/pdfs/llm_inference.pdf"
         },
         {
             "title": "Ask485?",
-            "title_img": "fa-solid fa-briefcase fa-2xl",
             "affiliation": "Web Systems | University of Michigan",
             "description": "A fully functional search engine created via a segmented inverted index of webpages, an index server (search results), and a search server (UI).",
             "skills": ["React.js", "Python", "MapReduce"],

@@ -47,47 +47,6 @@
     opacity: 1;
 }
 
-.experience-card {
-  text-align: left;
-  position: relative;
-  padding: 15px;
-  border-radius: 5px;
-  bottom: 0;
-  white-space: wrap;
-  background: #586aee47;
-}
-.experience-card {
-    gap: 1em;
-}
-
-.experience-card h2 {
-    font-size: 1.75em;
-    text-align: left;
-    margin: 0 0 0 0;
-    padding: 0;
-}
-
-.experience-card img{
-    max-width: 80%;
-}
-
-time,
-.experience-card h2,
-.experience-card p {
-    margin: 0;
-}
-
-time {
-  font-weight: bold;
-  font-size: 1.2em;
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-/* TODO: EVALUATE WIDTH OF DIVS */
-
-
 :root {
     --text-color: #7400CC; /* Light mode */
     --background-color: #F5F5F5;
