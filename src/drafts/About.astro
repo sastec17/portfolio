@@ -1,0 +1,73 @@
+---
+import "../../styles/global.css"
+
+const img_arr = [
+    {url: '/portfolio/slideshow_img/bighouse.JPG', description: 'Sarah visiting the big house'},
+    {url: '/portfolio/slideshow_img/undergrad.JPG', description: 'Sarah after getting a Bachelors degree'},
+    {url: '/portfolio/slideshow_img/per-grad.JPG', description: 'Sarah after graduating with a Masters degree'}
+]
+---
+<div class="page">
+    <h1>About Me</h1>
+    <div class="about-content center-all">
+        <div class="column-flex">
+        {img_arr.map((image: any) => 
+            <div class="slideshow">
+                <img src={image.url} alt={image.description} style="height: auto; max-width: 375px; width: 100%"/>
+            </div>
+        )}
+            <div class="center-all dot-container">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        </div>
+
+        <div class="about-text">
+                <p> Hey! I’m Sarah Stec, a recent graduate with a Master’s degree in Computer Science Engineering from the University
+                    of Michigan (Go Blue!) </p>
+                <p> During my internship building vaccine tracking dashboards with 
+                    the Michigan Public Health Integrated Center for Outbreak 
+                    Analytics and Modeling (MICOM), I discovered my <b class="text-bold">passion for 
+                    “tech for good”</b>—especially leveraging technology to reduce 
+                    socioeconomic disparities.</p>
+
+                <p>As an <b class="text-bold">insatiably curious learner</b>, I'm drawn to full-stack development
+                    because it allows me to build meaningful solutions while effectively exploring 
+                    new technologies.
+                </p>
+                
+                <p>Outside of work, you can find me jamming on my 
+                    keyboard, crushing it in Fantasy Football, and 
+                    chasing live music at as many concerts as possible :)</p>
+
+                <p> I'm currently <b class="text-bold">seeking full-time positions</b> where I can 
+                    solve exciting and challenging problems in a collaborative
+                    environment!
+                </p>
+        </div>
+    </div>
+</div>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slideshow");
+      let dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        // Explicitly cast 'slides[i]' to 'HTMLElement'
+        (slides[i] as HTMLElement).style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+      // Explicitly cast 'slides[slideIndex-1]' to 'HTMLElement'
+      (slides[slideIndex-1] as HTMLElement).style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>

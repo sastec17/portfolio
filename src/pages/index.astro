@@ -4,25 +4,18 @@ import "../../styles/component.css"
 import "../../styles/mobile.css"
 import "../../styles/timeline.css"
 import BaseLayout from "../layouts/BaseLayout.astro"
+import About from "../sections/About.astro"
 import Projects from "../sections/Projects.astro"
+import Splash from "../sections/Splash.astro"
 import Timeline from "../sections/Timeline.astro"
-import NewAbout from "../sections/NewAbout.astro"
-import Experience from "../sections/Experience.astro"
 ---
 
 <BaseLayout>
-	<div id="home" class="center-all column-flex page">
-		<div class="column-flex container">
-			<h1 class="typed-out">Hey! I'm Sarah Stec </h1>
-		</div>
-		<h2>A passionate full-stack developer with a <b class="text-bold">knack for learning</b> new technologies</h2>
-		<a href="/portfolio/#about" class="learn-more">
-			<p>learn more</p>
-			<i class="fa-solid fa-angle-down"></i>
-		</a>
+	<div id="home">
+		<Splash />
 	</div>
-	<div id="about" style="margin-top: 50px;">
-		<NewAbout />
+	<div id="about">
+		<About />
 	</div>
 	<div id="experience">
 		<Timeline></Timeline>

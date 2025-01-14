@@ -1,14 +1,10 @@
 html {
-    background-color: #F5F5F5;
+    background-color: var(--background-color);
+    color: var(--opp-color);
     font-family: Gill Sans;
     scroll-behavior: smooth;
     scroll-padding-top: 85px;
     margin-bottom: 80px;
-  }
-
-html.dark {
-    background-color: #282828;
-    color: #FCFCFC;
 }
 
 button {
@@ -18,14 +14,10 @@ button {
 }
 
 h1 {
-    color: #7C00DB;
+    color: var(--text-color);
     font-size: 4em;
     text-align: center;
     font-weight: 700;
-}
-
-.dark h1 {
-    color: #D59EFF;
 }
 
 h2 {
@@ -38,8 +30,15 @@ p {
     font-size: 1.2rem;
 }
 
-.dark .learn-more,
-.dark .navbar-container a {
-    color: #FCFCFC;
+:root {
+    --text-color: #7400CC; /* Light mode */
+    --background-color: #F5F5F5;
+    --opp-color: #282828;
+  }
+  
+.dark {
+    --text-color: #D59EFF; /* Dark mode */
+    --background-color: #282828; 
+    --opp-color: #F5F5F5;
 }
 

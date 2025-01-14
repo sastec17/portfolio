@@ -12,6 +12,9 @@
         scroll-padding-top: 110px;
         margin-bottom: 0px;
     }
+    .card-content {
+        margin-bottom: 24px;
+    }
     .navbar-mobile {
         display: flex;
         padding: 10px 0;
@@ -57,7 +60,7 @@
         display: none;
     }
 
-    .container h1 {
+    .splash-heading h1 {
         color: var(--text-color);
         font-size: 3.5em;
         display: inline-block;

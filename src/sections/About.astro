@@ -10,41 +10,61 @@ const img_arr = [
 <div class="page">
     <h1>About Me</h1>
     <div class="about-content center-all">
-        <div class="column-flex">
-        {img_arr.map((image: any) => 
-            <div class="slideshow">
-                <img src={image.url} alt={image.description} style="height: auto; max-width: 375px; width: 100%"/>
+        <div class="column-flex center-all">
+            {img_arr.map((image: any) => 
+                <div class="slideshow">
+                    <img src={image.url} alt={image.description} style="height: auto; max-width: 375px; width: 100%"/>
+                </div>
+            )}
+                <div class="center-all dot-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
             </div>
-        )}
-            <div class="center-all dot-container">
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-            </div>
-        </div>
 
         <div class="about-text">
-                <p> Hey! I’m Sarah Stec, a recent graduate with a Master’s degree in Computer Science Engineering from the University
-                    of Michigan (Go Blue!) </p>
+            <div class="about-box mission-box">
+                <h2 class="text-bold">Passion + Interest</h2>
                 <p> During my internship building vaccine tracking dashboards with 
-                    the Michigan Public Health Integrated Center for Outbreak 
-                    Analytics and Modeling (MICOM), I discovered my <b class="text-bold">passion for 
-                    “tech for good”</b>—especially leveraging technology to reduce 
+                    MICOM, I discovered my <b class="text-bold">passion for 
+                    “tech for good.”</b> I now aspire to use technology to reduce 
                     socioeconomic disparities.</p>
 
                 <p>As an <b class="text-bold">insatiably curious learner</b>, I'm drawn to full-stack development
                     because it allows me to build meaningful solutions while effectively exploring 
                     new technologies.
                 </p>
-                
-                <p>Outside of work, you can find me jamming on my 
-                    keyboard, crushing it in Fantasy Football, and 
-                    chasing live music at as many concerts as possible :)</p>
+            </div>
+            <div class="about-boxes">
+                {/** Education */}
+                <div class="about-box small-box">
+                    <div>
+                        <h2 class="text-bold">Education</h2>
+                        <h3>University of Michigan</h3>
+                    </div>
 
-                <p> I'm currently <b class="text-bold">seeking full-time positions</b> where I can 
-                    solve exciting and challenging problems in a collaborative
-                    environment!
-                </p>
+                    <div>
+                        <p>Master of Science in Engineering </p>
+                        <b>Computer Science</b>
+                    </div>
+
+                    <div>
+                        <p>Bachelor of Science in Engineering</p>
+                        <b>Computer Science, Minor in Mathematics</b>
+                    </div>
+                </div>
+                {/** Personal */}
+                <div class="about-box small-box">
+                    <h2 class="text-bold">Personal</h2>
+                    <p>Outside of CS, you'll catch me...</p>
+                    <ul class="personal-list">
+                        <li>Jamming on my keyboard</li>
+                        <li>Crushing it in Fantasy Football</li>
+                        <li>Chasing live music at as many concerts as possible</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

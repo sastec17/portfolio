@@ -7,7 +7,7 @@
         background-color: var(--opp-color);
         margin: 0 auto;
         padding-top: 50px;
-      }
+    }
       
     /* circle on vertical-line */
     .vertical-line::after {
@@ -22,7 +22,6 @@
         bottom: 0;
     }
       
-    /* position of experience cards */
     .vertical-line:nth-child(odd) .experience-card {
         transform: translateX(-105%); /* Shift left */
     }
@@ -30,25 +29,23 @@
     .vertical-line:nth-child(even) .experience-card {
         transform: translateX(5%); /* Shift right */
     }
+
     .experience-card {
         width: 45vw;
         max-width: 700px;
     }
 }
+
 .vertical-line div {
-    visibility: hidden;
     opacity: 0;
     transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  }
+    visibility: hidden;
+}
   
 .vertical-line.show div {
+    opacity: 1;
     transform: none;
     visibility: visible;
-    opacity: 1;
-}
-
-.description {
-    margin-bottom: 24px;
 }
 
 .experience-section {
@@ -59,6 +56,7 @@
 }
 
 .experience-card {
+    gap: 1em;
     text-align: left;
     position: relative;
     padding: 15px;
@@ -66,36 +64,38 @@
     bottom: 0;
     white-space: wrap;
     background: #586aee47;
-    gap: 1em;
-  }
-  .card-heading p{
+}
+
+.card-heading p{
     margin: 0 0 0 0;
     padding: 0;
-  }
-  .experience-card h2 {
-      font-size: 1.75em;
-      text-align: left;
-      margin: 0 0 0 0;
-      padding: 0;
-  }
-  
-  .experience-card img{
-      max-width: 80%;
-  }
-    time,
-    .experience-card h2,
-    .experience-content p{
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+}
 
-    time {
-        font-weight: bold;
-        font-size: 1.2em;
-        display: block;
-        margin-bottom: 10px;
-        width: 100%;
-    }
+.experience-card h2 {
+    font-size: 1.75em;
+    margin: 0 0 0 0;
+    padding: 0;
+    text-align: left;
+}
+  
+.experience-card img{
+    max-width: 80%;
+}
+
+time,
+.experience-card h2,
+.experience-content p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+time {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    width: 100%;
+}
 
 :root {
     --text-color: #7400CC; /* Light mode */
