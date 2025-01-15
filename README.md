@@ -2,6 +2,8 @@
 
 See the live version [here](https://sastec17.github.io/portfolio/)
 
+This project was a great opportunity to explore Astro while brushing up on my raw CSS skills. I even learned how to make a website mobile compatible! 
+
 ## 🧞 Commands
 After cloning the repo, you can run my code as follows:
 
