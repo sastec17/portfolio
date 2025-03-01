@@ -1,6 +1,14 @@
 {
     "projects": [
         {
+            "title": "Nosebleed Nation",
+            "affiliation": "Personal",
+            "description": "I love attending live concerts, but found it challenging to remember them all! So, I engineered this blog to track each event while also showcasing my frontend skills.",
+            "skills": ["CSS", "HTML", "Astro", "JavaScript"],
+            "imgUrl": "/portfolio/project_img/blog.png",
+            "link": "https://sastec17.github.io/blog/"
+        },
+        {
             "title": "SoundScholars",
             "affiliation": "AI in Education | University of Michigan",
             "description": "A cognitive tutor that teaches novices musical rhythms in a fun and approachable way via learning pages and targeted exercises.",
