@@ -33,13 +33,6 @@
             "link": "/portfolio/pdfs/llm_inference.pdf"
         },
         {
-            "title": "Ask485?",
-            "affiliation": "Web Systems | University of Michigan",
-            "description": "A fully functional search engine created via a segmented inverted index of webpages, an index server (search results), and a search server (UI).",
-            "skills": ["React.js", "Python", "MapReduce"],
-            "imgUrl": "/portfolio/project_img/ask485.png"
-        },
-        {
             "title": "Portfolio",
             "title_img": "fa-solid fa-briefcase fa-2xl",
             "affiliation": "Personal",

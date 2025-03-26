@@ -6,7 +6,56 @@ const img_arr = [
     {url: '/portfolio/slideshow_img/undergrad.JPG', description: 'Sarah after getting a Bachelors degree'},
     {url: '/portfolio/slideshow_img/per-grad.JPG', description: 'Sarah after graduating with a Masters degree'}
 ]
+
+const frontend = ['React', 'Vue', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'MaterialUI', 'TailwindCSS', 'Figma']
+const backend = ['C++', 'Python', 'Flask', 'SQL', 'REST API', 'Git', 'VSCode']
 ---
+<div style="display: flex; flex-direction: column; align-items:center;">
+    <div class="new-about">
+        <h2><b>Welcome! I'm glad you're here</b></h2>
+        <p>I'm an insatiably curious engineer with Bachelor's and Master's degrees in Computer Science from the University of Michigan. (Go blue!) 
+            I'm passionate about continuous learning, full-stack development, and leveraging technology to evoke meaningful change.
+        </p>
+
+        <p>Outside of tech, you'll catch me jamming on my keyboard, attending live concerts, and running.</p>
+    </div>
+    <div class="tech-skills">
+        <div>
+            <h2>Frontend & Design Tools</h2>
+            <ul>
+                {frontend.map(skill=>(
+                    <li>{skill}</li>
+                ))}
+
+            </ul>         
+        </div>
+        <div>
+            <h2>Backend & Dev Tools</h2>
+            <ul>
+                {backend.map(skill=>(
+                    <li>{skill}</li>
+                ))}
+
+            </ul> 
+        </div>
+        <div>
+            <h2>Education</h2>
+            <ul>
+                <li><b>University of Michigan</b></li>
+                <li><b>Master of Science in Engineering</b></li>
+                <li>Computer Science and Engineering</li>
+                <br>
+                <li><b>University of Michigan</b></li>
+                <li><b>Bachelor of Science in Engineering</b></li>
+                <li>Computer Science and Engineering,</li>
+                <li>Minor in Mathematics</li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+{/* 
 <div class="page">
     <h1>About Me</h1>
     <div class="about-content center-all">
@@ -24,6 +73,13 @@ const img_arr = [
             </div>
 
         <div class="about-text">
+                {/** 
+            <p>I'm so glad you're here!!</p>
+            <p>I'm Sarah, and I'm a curious and driven engineer with an immense passion for continuous learning,
+                 full-stack development, and "tech for good." 
+            
+            <p>I'm currently looking for full-time positions that drive meaningful change and embrace a growth mindset.</p>
+        
             <div class="about-box mission-box">
                 <h2 class="text-bold">Passion + Interest</h2>
                 <p> During my internship building vaccine tracking dashboards with 
@@ -31,13 +87,11 @@ const img_arr = [
                     “tech for good.”</b> I now aspire to use technology to reduce 
                     socioeconomic disparities.</p>
 
-                <p>As an <b class="text-bold">insatiably curious learner</b>, I'm drawn to full-stack development
-                    because it allows me to build meaningful solutions while effectively exploring 
-                    new technologies.
-                </p>
+
             </div>
+           
             <div class="about-boxes">
-                {/** Education */}
+                
                 <div class="about-box small-box">
                     <div>
                         <h2 class="text-bold">Education</h2>
@@ -54,7 +108,6 @@ const img_arr = [
                         <b>Computer Science, Minor in Mathematics</b>
                     </div>
                 </div>
-                {/** Personal */}
                 <div class="about-box small-box">
                     <h2 class="text-bold">Personal</h2>
                     <p>Outside of CS, you'll catch me...</p>
@@ -65,9 +118,12 @@ const img_arr = [
                     </ul>
                 </div>
             </div>
+       
         </div>
     </div>
 </div>
+*/}
+
 <script>
     let slideIndex = 0;
     showSlides();
@@ -88,6 +144,6 @@ const img_arr = [
       // Explicitly cast 'slides[slideIndex-1]' to 'HTMLElement'
       (slides[slideIndex-1] as HTMLElement).style.display = "block"; 
       dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
     }
 </script>
