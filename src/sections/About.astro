@@ -7,8 +7,8 @@ const img_arr = [
     {url: '/portfolio/slideshow_img/per-grad.JPG', description: 'Sarah after graduating with a Masters degree'}
 ]
 
-const frontend = ['React', 'Vue', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'MaterialUI', 'TailwindCSS', 'Figma']
-const backend = ['C++', 'Python', 'Flask', 'SQL', 'REST API', 'Git', 'VSCode']
+const frontend_img = ['css.png', 'js.png', 'html.png', 'react.png', 'vue.png', 'tailwind.png', 'materialui.png', 'figma1.png']
+const backend_img = ['c++.png', 'python.png', 'flask.png', 'nodejs.jpeg', 'vscode.png', 'sql.jpeg', 'github.svg', 'restapi.png']
 ---
 <div class="about-page-2">
     <div class="new-about">
@@ -20,25 +20,23 @@ const backend = ['C++', 'Python', 'Flask', 'SQL', 'REST API', 'Git', 'VSCode']
         <p>Outside of tech, you'll catch me jamming on my keyboard, attending live concerts, and running.</p>
     </div>
     <div class="tech-skills">
-        <div>
+        <div class="skill-category">
             <h2>Frontend & Design Tools</h2>
-            <ul>
-                {frontend.map(skill=>(
-                    <li>{skill}</li>
+            <div class="indiv-skill">
+                {frontend_img.map(url=>(
+                    <img src={`/portfolio/skills/${url}`} alt="Skill Image" />
                 ))}
-
-            </ul>         
+            </div>       
         </div>
-        <div>
+        <div class="skill-category">
             <h2>Backend & Dev Tools</h2>
-            <ul>
-                {backend.map(skill=>(
-                    <li>{skill}</li>
+            <div class="indiv-skill">
+                {backend_img.map(url=>(
+                    <img src={`/portfolio/skills/${url}`} alt="Skill Image" />
                 ))}
-
-            </ul> 
+            </div>
         </div>
-        <div>
+        <div class="skill-category">
             <h2>Education</h2>
             <ul>
                 <li><b>University of Michigan</b></li>

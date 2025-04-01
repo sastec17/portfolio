@@ -129,11 +129,11 @@
         display: flex;
         flex-direction: column;
     }
-    .tech-skills div {
+    .skill-category {
         width: 100%;
         padding-bottom: 8px;
     }
-    .tech-skills div:nth-child(2) {
+    .skill-category:nth-child(2) {
         border-top: 0.5px solid var(--opp-color);
         border-bottom: 0.5px solid var(--opp-color);
     }

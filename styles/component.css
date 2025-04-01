@@ -166,10 +166,25 @@
     border: 0.5px solid var(--opp-color); 
     padding-bottom: 12px;
 }
+
+.indiv-skill {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.indiv-skill img{
+    width: 55px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 .tech-skills ul {
     margin: 0 0;
     padding-inline-start: 0px;
-
 }
 
 .tech-skills ul li {
@@ -179,7 +194,7 @@
     list-style-type: none;
 }
 
-.tech-skills div {
+.skill-category {
     width: 33%;
 }
 
